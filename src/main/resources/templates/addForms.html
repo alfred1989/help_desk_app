@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="http://www.thymeleaf.org ">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h1>Dodaj zgłoszenie</h1>
+<form th:action="@{/save}" th:object="${application}" method="post">
+    <input th:type="text" th:field="*{priority_of_the_request}">
+    <input th:type="text" th:field="*{user}">
+    <input th:type="text" th:field="*{description}">
+    <button type="submit">Zapisz</button>
+
+</form>
+</body>
+</html>
