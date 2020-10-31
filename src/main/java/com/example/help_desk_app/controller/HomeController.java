@@ -24,6 +24,6 @@ private ApplicationsRepository applicationsRepository;
     @PostMapping("/save")
     public String addAplications(Applications applications){
 applicationsRepository.save(applications);
-        return "succes";
+        return "addForms";
     }
 }

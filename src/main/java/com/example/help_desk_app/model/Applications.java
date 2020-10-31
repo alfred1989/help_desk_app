@@ -1,11 +1,9 @@
 package com.example.help_desk_app.model;
 
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
-import javax.persistence.Id;
+import javax.persistence.*;
 
 @Entity
+@Table(name = "APPLICATIONS_TABLE")
 public class Applications {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
